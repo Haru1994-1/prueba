@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: Highlight;
+}
+
+/*texto info*/
+.centrado{
+    margin: auto;
+    width: 900px;
+    
+}
+
+/*MARGEN*/
+div h1{
+    margin: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+h1{
+    background: white;
+    height: 50px;
+    margin: 50px 20px 50px 20px;
+    width: 1250px;
+}
+
+/*BARRA DE MENU*/
+header{
+    position: relative;
+    top:0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, .1);
+    padding: 5px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header.logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+    
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+header .navbar ul li a:hover{
+    background: #333;
+    color: #fff;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 250px;
+    background: #fff;
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul{
+    display: initial;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color:#333;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:100px) {
+    header{
+        padding: 10px;
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+    header .navbar ul li{
+        width: 100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background: rgb(10, 10, 10);
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
+#inicio .imagen {
+    width: 100%;
+    height: 250px;
+    position:relative;
+    background: center;
+    background: url(image/Monfor.png);
+    background: no-repeat;
+    
+}
+
+
+
+/***PIE DE PAGINA***/
+footer {
+    background: rgb(4, 4, 4);
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
